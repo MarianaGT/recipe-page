@@ -6,6 +6,8 @@
 body {
   font-family: Montserrat, sans-serif;
   padding: 1em;
+  line-height: 1.5em;
+  color: #4F4F4F;
 }
 
 h1, h2, h3, .number {
@@ -25,11 +27,15 @@ img {
   width: 100%;
 }
 
+header p {
+  margin-top: 0;
+}
+
 .checkbox {
   display: block;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
+  padding-left: 40px;
+  margin: 0 0 12px 0;
   cursor: pointer;
 }
 
@@ -88,13 +94,39 @@ img {
   color: white;
   width: 36px;
   height: 36px;
-  margin-right: 0.5em;
   font-size: 1.4em;
   text-align: center;
+  padding-top: 0.2em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
 }
 
 .flex {
-  display: grid;
-    grid-template-columns: 1fr 5fr;
-    padding: 2em;
+  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 12fr;
+  }
 }
