@@ -29,6 +29,11 @@ h4 {
   color: var(--gray);
   font-weight: 400;
   font-size: 0.8em;
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
 }
 
 img {
@@ -113,8 +118,8 @@ header p {
   grid-template-columns: 1fr 8fr;
 }
 
-.card-servings-lg {
-  display: none;
+.icon-margin {
+  margin: 0 0.5em 0 0;
 }
 
 .flex {
@@ -123,6 +128,10 @@ header p {
 
 .align-center {
   align-items: center;
+}
+
+.card-servings-lg {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -139,17 +148,17 @@ header p {
 
 @media only screen and (min-width: 992px) {
   body {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
   }
   .grid-instructions {
     display: grid;
-    grid-template-columns: 1fr 12fr;
+    grid-template-columns: 1fr 8fr;
   }
 
-   .grid-main {
+  .grid-main {
     display: grid;
-    grid-template-columns: 8fr 1fr;
+    grid-template-columns: 2fr 1fr;
   }
 
   .card-servings-sm {
@@ -163,4 +172,9 @@ header p {
     border-radius: 12px;
     margin-left: 2em;
   }
+
+  .card-servings-content-lg {
+    margin-bottom: 2em;
+  }
+
 }
