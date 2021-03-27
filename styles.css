@@ -134,6 +134,14 @@ header p {
   align-items: center;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
+.card-servings-content {
+  margin-bottom: 2em;
+}
+
 .card-servings-lg {
   display: none;
 }
@@ -177,10 +185,6 @@ header p {
     margin: 0  0 0 auto;
     height: 19em;
     width: 8.5em;
-  }
-
-  .card-servings-content-lg {
-    margin-bottom: 2em;
   }
 
   .mr {
