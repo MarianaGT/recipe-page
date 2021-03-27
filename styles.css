@@ -45,6 +45,10 @@ header p {
   margin-top: 0;
 }
 
+.orange {
+  color: var(--primary-color);
+}
+
 .checkbox {
   display: block;
   position: relative;
@@ -170,11 +174,17 @@ header p {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     padding: 2em;
     border-radius: 12px;
-    margin-left: 2em;
+    margin: 0  0 0 auto;
+    height: 19em;
+    width: 8.5em;
   }
 
   .card-servings-content-lg {
     margin-bottom: 2em;
+  }
+
+  .mr {
+    margin-right: 3em;
   }
 
 }
