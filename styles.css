@@ -1,6 +1,7 @@
 :root {
   --primary-color: #F2994A;
   --secondary-color: #ead2be;
+  --gray: #828282;
 }
 
 body {
@@ -23,8 +24,16 @@ h3 {
   font-style: italic;
 }
 
+h4 {
+  text-transform: uppercase;
+  color: var(--gray);
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
 img {
   width: 100%;
+  margin-bottom: 2em;
 }
 
 header p {
@@ -99,13 +108,21 @@ header p {
   padding-top: 0.2em;
 }
 
-.grid {
+.grid-instructions {
   display: grid;
   grid-template-columns: 1fr 8fr;
 }
 
+.card-servings-lg {
+  display: none;
+}
+
 .flex {
   display: flex;
+}
+
+.align-center {
+  align-items: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -114,7 +131,7 @@ header p {
     margin: 0 auto;
   }
 
-  .grid {
+  .grid-instructions {
     display: grid;
     grid-template-columns: 1fr 10fr;
   }
@@ -125,8 +142,25 @@ header p {
     width: 60%;
     margin: 0 auto;
   }
-  .grid {
+  .grid-instructions {
     display: grid;
     grid-template-columns: 1fr 12fr;
+  }
+
+   .grid-main {
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+  }
+
+  .card-servings-sm {
+    display: none;
+  }
+
+  .card-servings-lg {
+    display: block;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    border-radius: 12px;
+    margin-left: 2em;
   }
 }
